@@ -16,7 +16,7 @@ Information retrieval, web-scraping, alınan API dataları bunlara örnektir.
 
 İki sistemin arasında nasıl konusacağını belirleyen bir yapıdır. Belirli spesifik tipte akış ve veri sunar. Belirli bir rate içerisinde olmaktadır. Belirli sorgulara karşı belirli bir data parçası geçmektedir, tüm sistemin veri akışını sağlamak için değildir.
 
-Farklı formatlarda dönüşü olabilir. **.xml** veya **json** olabilir. JSON oldukça popüler, şu an genel akım json üzerinden çalışıyor.
+> Farklı formatlarda dönüşü olabilir. **.xml** veya **json** olabilir. JSON oldukça popüler, şu an genel akım json üzerinden geçiyor.
 
 Sensörler ufak bilgisayarlar denilebilir, genellikle amaca yönelik sadece görevini yapan pil ömrü yüksek olan mini cihazlardır. Üzerindeki datayı merkeze alınarak kullanılabilir. _Aslında **edgedeki** cihazlardan bahsediliyor._
 
@@ -30,7 +30,7 @@ Değişikliklerde call denilen bir sistem kullanılabilir. İki taraf için yük
 
 Genellikle problemler belirli bir zaman diliminden itibaren veya geçmişten gelir. Anlık sorunları ve sistemin ne yaptığını en ince detayın kadar görmek için **loglama** kullanılır.
 
-**Pro Tip:** Her satırın loglanmasının anlamı yoktur. Oldukça dikkat dağıtıcı ve kullanışsız olmaya başlamaktadır. Bunun için loglamanın seviyeleri vardır.
+> **Pro Tip:** Her satırın loglanmasının anlamı yoktur. Oldukça dikkat dağıtıcı ve kullanışsız olmaya başlamaktadır. Bunun için loglamanın seviyeleri vardır.
 
 ### Loglamanın seviyeleri
 
@@ -42,7 +42,7 @@ Low level, critical, warning, info gibi seviyeler vardır.
 - **Error:** Yazılım ciddi bir sorunla karşılaştı ve görevini yerine getiremedi.
 - **Critical**: Programın işlevini yerine getiremeyecek bir sorunla karşılaşmasıdır.
 
-**Pro Tip:** _grep_ komutuyla dosyaların içerisindeki belirli kelimeyi arar. _(e.g. 2 şubat tarihinde bir problem oldu ve onun bulunması için kullanılabilir.)_
+> **Pro Tip:** _grep_ komutuyla dosyaların içerisindeki belirli kelimeyi arar. _(e.g. 2 şubat tarihinde bir problem oldu ve onun bulunması için kullanılabilir.)_
 
 ### Loglama yaparken:
 
