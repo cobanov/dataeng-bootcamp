@@ -1,10 +1,18 @@
+# İçindekiler
+
+| Topic           | Day                                                        |
+| --------------- | ---------------------------------------------------------- |
+| Data Collection | [Day 1](https://github.com/cobanov/dataeng-bootcamp#day-1) |
+| Data Collection | [Day 2](https://github.com/cobanov/dataeng-bootcamp#day-2) |
+| Data Cleaning   | TBD                                                        |
+
 # Day 1
 
 ## **Modül-1: Data Collection**
 
-**İçerik:** API'lar, loglama, sensory data, web scraping. 
+**İçerik:** API'lar, loglama, sensory data, web scraping.
 
-**Anahtar sözcükler:** JSON, XML, HTTP, HTML, DOM, grep, RegExp. 
+**Anahtar sözcükler:** JSON, XML, HTTP, HTML, DOM, grep, RegExp.
 
 **Araçlar:** Postman, log4j, python-logging, BeautifulSoup, Jsoup, Selenium
 
@@ -18,15 +26,15 @@ Information retrieval, web-scraping, alınan API dataları bunlara örnektir.
 
 İki sistemin arasında nasıl konusacağını belirleyen bir yapıdır. Belirli spesifik tipte akış ve veri sunar. Belirli bir rate içerisinde olmaktadır. Belirli sorgulara karşı belirli bir data parçası geçmektedir, tüm sistemin veri akışını sağlamak için değildir.
 
-Farklı formatlarda dönüşü olabilir. **.xml** veya  **json** olabilir. JSON oldukça popüler, şu an genel akım json üzerinden çalışıyor.
+Farklı formatlarda dönüşü olabilir. **.xml** veya **json** olabilir. JSON oldukça popüler, şu an genel akım json üzerinden çalışıyor.
 
-Sensörlere ufak bilgisayarlar denilebilir, genellikle amaca yönelik sadece görevini yapan pil ömrü yüksek olan mini cihazlardır. Üzerindeki datayı merkeze alınarak kullanılır. *Aslında **edgedeki** cihazlardan bahsediliyor.*
+Sensörlere ufak bilgisayarlar denilebilir, genellikle amaca yönelik sadece görevini yapan pil ömrü yüksek olan mini cihazlardır. Üzerindeki datayı merkeze alınarak kullanılır. _Aslında **edgedeki** cihazlardan bahsediliyor._
 
 ---
 
 ## **Web Scraping**
 
-Görece API'ye göre verinin elde edilmesi daha zordur. Veri genellikle dağınık biçimde web'de bulunur, veri toplama prosesi kullanıcının bu rotaları tanımlayarak gerçekleştirmesiyle sağlanır. Dezavantajı ise belirli bir protokolun olmaması, ***challenging but fun!***
+Görece API'ye göre verinin elde edilmesi daha zordur. Veri genellikle dağınık biçimde web'de bulunur, veri toplama prosesi kullanıcının bu rotaları tanımlayarak gerçekleştirmesiyle sağlanır. Dezavantajı ise belirli bir protokolun olmaması, **_challenging but fun!_**
 
 Değişikliklerde call denilen bir sistem kullanılabilir. İki taraf için yüklü bir sistem olduğundan dolayı istenilen bir yöntem değildir. Bir websitesi için yazılan scraping scriptleri her gün değişmez bu yüzden büyük bir problem yaratmayacaktır. Subscribe yönteminde webhook gibi yöntemler kullanılabilir fakat karşı tarafın da sizi tanıyor olması gerek.
 
@@ -34,9 +42,9 @@ Değişikliklerde call denilen bir sistem kullanılabilir. İki taraf için yük
 
 ## Loglama
 
-Genellikle problemler belirli bir zaman diliminden itibaren veya geçmişten gelir.  Anlık sorunları ve sistemin ne yaptığını en ince detayın kadar görmek için **loglama** kullanılır.
+Genellikle problemler belirli bir zaman diliminden itibaren veya geçmişten gelir. Anlık sorunları ve sistemin ne yaptığını en ince detayın kadar görmek için **loglama** kullanılır.
 
-**Pro Tip:** Her satırın loglanmasının anlamı yoktur.  Bu yöntem oldukça dikkat dağıtıcı ve kullanışsız olabilir. Bunun için loglamanın seviyeleri vardır.
+**Pro Tip:** Her satırın loglanmasının anlamı yoktur. Bu yöntem oldukça dikkat dağıtıcı ve kullanışsız olabilir. Bunun için loglamanın seviyeleri vardır.
 
 ### Loglamanın seviyeleri
 
@@ -48,7 +56,7 @@ Low level, critical, warning, info gibi seviyeler vardır.
 - **Error:** Yazılım ciddi bir sorunla karşılaştı ve görevini yerine getiremedi.
 - **Critical**: Programın işlevini yerine getiremeyecek bir sorunla karşılaşmasıdır.
 
-**Pro Tip:** *grep* komutuyla dosyaların içerisindeki belirli kelimeyi arar. *(e.g. 2 şubat tarihinde bir problem oldu ve onun bulunması için kullanılabilir.)*
+**Pro Tip:** _grep_ komutuyla dosyaların içerisindeki belirli kelimeyi arar. _(e.g. 2 şubat tarihinde bir problem oldu ve onun bulunması için kullanılabilir.)_
 
 ### Loglama yaparken:
 
@@ -57,9 +65,9 @@ Low level, critical, warning, info gibi seviyeler vardır.
 - **API Bilgisi:** Sensor ID, hangi fonksiyon, genel bilgiler içermelidir.
 - **Logun içeriği:** value, logun içeriği json, plain text, xml olabilir.
 
-Logları tek büyük bir dosyada depolamak giderek büyüyen bir dosya olacağından dolayı mantıklı değildir. Databasede tablo olarak saklanabilir böyle bir durumda select süresi giderek uzayacaktır. Sistemi optimize edebilmek için aktif olanlar veya olmayanlar yahut arşivlenmiş gibi farklı parçalara bölmek zaman açısından yararlı olacaktır. 
+Logları tek büyük bir dosyada depolamak giderek büyüyen bir dosya olacağından dolayı mantıklı değildir. Databasede tablo olarak saklanabilir böyle bir durumda select süresi giderek uzayacaktır. Sistemi optimize edebilmek için aktif olanlar veya olmayanlar yahut arşivlenmiş gibi farklı parçalara bölmek zaman açısından yararlı olacaktır.
 
-Bu gibi büyük çaplı verilerde hızlı işlemler yapabilmek için **Hadoop** gibi özelleşmiş sistemler bulunmaktadır. Temelde depolanan ve güncel olarak kullanılan iki parçaya bölmek mantıklı olacaktır. 
+Bu gibi büyük çaplı verilerde hızlı işlemler yapabilmek için **Hadoop** gibi özelleşmiş sistemler bulunmaktadır. Temelde depolanan ve güncel olarak kullanılan iki parçaya bölmek mantıklı olacaktır.
 
 ---
 
@@ -74,16 +82,7 @@ Bu gibi büyük çaplı verilerde hızlı işlemler yapabilmek için **Hadoop** 
 
 # End of the first day!
 
-
-# Modül 1 - Day 2
-
-## **Modül-1: Data Collection**
-
-**İçerik:** API'lar, loglama, sensory data, web scraping.
-
-**Anahtar sözcükler:** JSON, XML, HTTP, HTML, DOM, grep, RegExp.
-
-**Araçlar:** Postman, log4j, python-logging, BeautifulSoup, Jsoup, Selenium
+# Day 2
 
 # HTTP
 
@@ -91,7 +90,7 @@ Bu gibi büyük çaplı verilerde hızlı işlemler yapabilmek için **Hadoop** 
 
 ## 🏢 Restful Mimarisi
 
-RESTful servisler veri iletiminde farklı HTTP metotlarını kullanmaktadır.  Yapılan HTTP request’i için çağrılan URL ile beraber HTTP method bilgisi bahsi geçen 4 metottan biri olarak seçilir ve sunucu yapılan talebin kayıt üzerine nasıl etki edeceğini buna göre belirler.
+RESTful servisler veri iletiminde farklı HTTP metotlarını kullanmaktadır. Yapılan HTTP request’i için çağrılan URL ile beraber HTTP method bilgisi bahsi geçen 4 metottan biri olarak seçilir ve sunucu yapılan talebin kayıt üzerine nasıl etki edeceğini buna göre belirler.
 
 **GET:** Veri listeleme - veri görüntülemek için kullanılır.
 
@@ -113,7 +112,7 @@ Kodlara linkten ulaşılabilir. [https://www.argenova.com.tr/http-durum-ve-hata-
 ### En sık karşılaşılan hata kodları
 
 - **HTTP 200 (OK):** yanıtın başarılı olduğunu gösterir. Yani, istemci ile sunucu arasındaki iletişim herhangi bir hata olmadan sorunsuz bir şekilde yürütülmüştür.
-- **HTTP 404 (Not Found):**  istenen kaynağın sunucu tarafından bulunamayacağı anlamına gelir. Bu, geçici bir aksaklıktan kaynaklanıyor olabilir ve gelecekte başka bir istekte bulunulursa kaynak kullanılabilir olabilir. Çoğunlukla, 404'e götüren bağlantılara genellikle bozuk bağlantılar denir.
+- **HTTP 404 (Not Found):** istenen kaynağın sunucu tarafından bulunamayacağı anlamına gelir. Bu, geçici bir aksaklıktan kaynaklanıyor olabilir ve gelecekte başka bir istekte bulunulursa kaynak kullanılabilir olabilir. Çoğunlukla, 404'e götüren bağlantılara genellikle bozuk bağlantılar denir.
 - **HTTP 502 (Bad Gateway):** sunucunun proxy olarak hareket ederken istekte bulunurken sunucudan geçersiz bir yanıt aldığını gösterir.
 
 ## 🥌 CURL
@@ -154,15 +153,15 @@ ipify.org
 
 Elimizdeki loglarda buradan terminal ekranında hızlıca sorgularımız getirebiliriz. Logların güzel şekilde tutulması işimizi kolaylaştırıyor. Pipe ile çok daha etkin kullanım yöntemleri mevcut.
 
-grep "42.236.10.125" * —color | wc -lw 
+grep "42.236.10.125" \* —color | wc -lw
 
 ### 📚 Ders Örnekleri:
 
-grep "GET"  * —color
+grep "GET" \* —color
 
-grep "42.236.10.125" * —color | wc -lw
+grep "42.236.10.125" \* —color | wc -lw
 
-grep "mozilla"  * —color
+grep "mozilla" \* —color
 
 ## 🌲 DOM
 
@@ -172,15 +171,15 @@ HTML için kullanılan doküman nesne modelidir. HTML Elementlerini objeler olar
 
 ```html
 <html>
-<head>
+  <head>
     <title></title>
     <style></style>
-</head>
-<body>
-   <div>
+  </head>
+  <body>
+    <div>
       <p>Cobanov</p>
-   </div>
-</body>
+    </div>
+  </body>
 </html>
 ```
 
@@ -212,7 +211,7 @@ Bu modül ile bir kaynak içerisindeki HTML kodlarını parse edip,botlar yazabi
 
 **Kaynak**: [https://www.sinanerdinc.com/python-selenium-modulu-kullanimi-1](https://www.sinanerdinc.com/python-selenium-modulu-kullanimi-1)
 
-Selenium, bilgisayarınıza yükleyeceğiniz bir driver yardımı ile ekrana chrome, firefox gibi bir tarayıcı açarak, gerçek bir insan gibi istediğiniz tüm işlemleri programlama dili yardımıyla çalıştırmanızı sağlayan bir araçtır. 
+Selenium, bilgisayarınıza yükleyeceğiniz bir driver yardımı ile ekrana chrome, firefox gibi bir tarayıcı açarak, gerçek bir insan gibi istediğiniz tüm işlemleri programlama dili yardımıyla çalıştırmanızı sağlayan bir araçtır.
 
 **Homework:** Vatan bilgisayardaki ürünlerin görsellerin veya isimleri ile ücretlerini scrap edebilirsin.
 
