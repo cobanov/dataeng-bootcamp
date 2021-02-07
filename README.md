@@ -8,8 +8,6 @@
 
 # Day 1
 
-<h1 style="text-align:center">Day 1</h1>
-
 ## **Modül-1: Data Collection**
 
 **İçerik:** API'lar, loglama, sensory data, web scraping.
