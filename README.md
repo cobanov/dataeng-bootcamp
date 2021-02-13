@@ -236,9 +236,17 @@ Selenium, bilgisayarınıza yükleyeceğiniz bir driver yardımı ile ekrana chr
 - **Selenium**: [https://gist.github.com/sirin/0e1491163b8f485a476e0991ad228b86](https://gist.github.com/sirin/0e1491163b8f485a476e0991ad228b86)
 </details>
 
-<details><summary><b>Show Day 3
-</b></summary>
+---
 
 # Modül-2: Data Cleaning
+
+**İçerik:** Parsing, Duplicate Elimination, Ensuring Quality: Validity-Accuracy-Completeness, Statistical Analysis, Unix-Linux Terminal
+
+**Anahtar sözcükler:** Bash, GNU Awk, GNU sed, jq, CSV files, JSON
+
+**Araçlar:** Shell(s), Excel, R
+
+<details><summary><b>Show Day 3
+</b></summary>
 
 </details>
