@@ -11,7 +11,7 @@ Bu Repo [Data Engineering Masterclass (DEMC–201)](https://datamasterclass.zemi
 - Mert Çobanov
 - Çağrı Köz
 
-# İçindekiler
+## İçindekiler
 
 | Topic           | Day                                                        |
 | --------------- | ---------------------------------------------------------- |
@@ -24,7 +24,7 @@ Bu Repo [Data Engineering Masterclass (DEMC–201)](https://datamasterclass.zemi
 | Webscraping Script | [.py](https://github.com/cobanov/dataeng-bootcamp/blob/main/homeworks/extractFromVatan.py) |
 | AWK Cheatsheet     | [PDF](https://github.com/cobanov/dataeng-bootcamp/blob/main/additional/AWK.pdf)            |
 
-# Day 1
+
 
 ## **Modül-1: Data Collection**
 
@@ -34,7 +34,9 @@ Bu Repo [Data Engineering Masterclass (DEMC–201)](https://datamasterclass.zemi
 
 **Araçlar:** Postman, log4j, python-logging, BeautifulSoup, Jsoup, Selenium
 
-# Data Toplama
+## Day 1
+
+## Data Toplama
 
 Information retrieval, web-scraping, alınan API dataları bunlara örnektir.
 
@@ -98,11 +100,11 @@ Bu gibi büyük çaplı verilerde hızlı işlemler yapabilmek için **Hadoop** 
 - **Jsoup:** BS4'un java versiyonu
 - **Selenium:** Selenium, bilgisayarınıza yükleyeceğiniz bir driver yardımı ile ekrana chrome, firefox gibi bir tarayıcı açarak, gerçek bir insan gibi istediğiniz tüm işlemleri programlama dili yardımıyla çalıştırmanızı sağlayan bir araçtır.
 
-# End of the first day!
+### End of the first day!
 
-# Day 2
+## Day 2
 
-# HTTP
+## HTTP
 
 “http”, bilginin sunucudan kullanıcıya nasıl ve ne şekilde aktarılacağını gösteren protokoldür. İnternet ağında sunucular ve kullanıcılar arasında nasıl bir veri alışverişi olacağı hakkında kurallar vardır. Bu düzeni sağlayan protokol de HTTP’dir.internet sitesine girmek için adres çubuğuna sitenin adresini yazdığınız vakit HTTP ile sunucuya bir istek gönderilir ve sunucu bu isteğe cevap verdiği vakit internet sitesinin verileri size gelir.
 
@@ -240,4 +242,4 @@ Selenium, bilgisayarınıza yükleyeceğiniz bir driver yardımı ile ekrana chr
 - **BS4**: [https://gist.github.com/sirin/695abacaa207ad7af20f18c946d19858](https://gist.github.com/sirin/695abacaa207ad7af20f18c946d19858)
 - **Selenium**: [https://gist.github.com/sirin/0e1491163b8f485a476e0991ad228b86](https://gist.github.com/sirin/0e1491163b8f485a476e0991ad228b86)
 
-# End of the second day!
+### End of the second day!
