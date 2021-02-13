@@ -31,6 +31,9 @@ Bu Repo [Data Engineering Masterclass (DEMC–201)](https://datamasterclass.zemi
 
 **Araçlar:** Postman, log4j, python-logging, BeautifulSoup, Jsoup, Selenium
 
+<details><summary><b>Show Day 1
+</b></summary>
+
 ## Data Toplama
 
 Information retrieval, web-scraping, alınan API dataları bunlara örnektir.
@@ -88,6 +91,11 @@ Bu gibi büyük çaplı verilerde hızlı işlemler yapabilmek için **Hadoop** 
 - **Selenium:** Selenium, bilgisayarınıza yükleyeceğiniz bir driver yardımı ile ekrana chrome, firefox gibi bir tarayıcı açarak, gerçek bir insan gibi istediğiniz tüm işlemleri programlama dili yardımıyla çalıştırmanızı sağlayan bir araçtır.
 
 ### End of the first day!
+
+</details>
+
+<details><summary><b>Show Day 2
+</b></summary>
 
 ## HTTP
 
@@ -226,5 +234,11 @@ Selenium, bilgisayarınıza yükleyeceğiniz bir driver yardımı ile ekrana chr
 
 - **BS4**: [https://gist.github.com/sirin/695abacaa207ad7af20f18c946d19858](https://gist.github.com/sirin/695abacaa207ad7af20f18c946d19858)
 - **Selenium**: [https://gist.github.com/sirin/0e1491163b8f485a476e0991ad228b86](https://gist.github.com/sirin/0e1491163b8f485a476e0991ad228b86)
+</details>
+
+<details><summary><b>Show Day 3
+</b></summary>
 
 # Modül-2: Data Cleaning
+
+</details>
