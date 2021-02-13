@@ -16,14 +16,14 @@ Bu Repo [Data Engineering Masterclass (DEMC–201)](https://datamasterclass.zemi
 | Topic           | Day                                                                         |
 | --------------- | --------------------------------------------------------------------------- |
 | Data Collection | [Link](https://github.com/cobanov/dataeng-bootcamp#modül-1-data-collection) |
-| Data Cleaning   | TBD                                                                         |
+| Data Cleaning   | [Link](https://github.com/cobanov/dataeng-bootcamp#modül-2-data-cleaning)   |
 
 | Files              | Link                                                                                       |
 | ------------------ | ------------------------------------------------------------------------------------------ |
 | Webscraping Script | [.py](https://github.com/cobanov/dataeng-bootcamp/blob/main/homeworks/extractFromVatan.py) |
 | AWK Cheatsheet     | [PDF](https://github.com/cobanov/dataeng-bootcamp/blob/main/additional/AWK.pdf)            |
 
-## **Modül-1: Data Collection**
+# Modül-1: Data Collection
 
 **İçerik:** API'lar, loglama, sensory data, web scraping.
 
@@ -226,3 +226,5 @@ Selenium, bilgisayarınıza yükleyeceğiniz bir driver yardımı ile ekrana chr
 
 - **BS4**: [https://gist.github.com/sirin/695abacaa207ad7af20f18c946d19858](https://gist.github.com/sirin/695abacaa207ad7af20f18c946d19858)
 - **Selenium**: [https://gist.github.com/sirin/0e1491163b8f485a476e0991ad228b86](https://gist.github.com/sirin/0e1491163b8f485a476e0991ad228b86)
+
+# Modül-2: Data Cleaning
