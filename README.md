@@ -1,3 +1,16 @@
+# Data Engineering Masterclass
+
+<p align="center"> <img src="https://pbs.twimg.com/profile_images/1341352412540530688/EJfGb11W_400x400.jpg"> </img></p>
+
+Bu Repo [Data Engineering Masterclass (DEMC–201)](https://datamasterclass.zeministanbul.ist) eğitiminde verilen derslerin içeriklerini ve notlarını içermektedir.
+
+**Tanım:** Data Engineering Masterclass (DEMC–201) veri odaklı teknolojik ürün geliştirme ekiplerinin veri mühendisliği ihtiyaçları gözetilerek hazırlanmış bir uzmanlık sınıfıdır. Bu uzmanlık sınıfı, data engineering alanında uzun yıllar çalışmış, deneyim sahibi yazılım geliştiriciler, veri mühendisleri, veri bilimcileri ve sistem mühendisleri tarafından hazırlanmıştır.
+
+## Contributors
+
+- Mert Çobanov
+- Çağrı Köz
+
 # İçindekiler
 
 | Topic           | Day                                                        |
