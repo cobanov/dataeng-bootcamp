@@ -6,6 +6,11 @@
 | Data Collection | [Day 2](https://github.com/cobanov/dataeng-bootcamp#day-2) |
 | Data Cleaning   | TBD                                                        |
 
+| Files              | Link                                                                                       |
+| ------------------ | ------------------------------------------------------------------------------------------ |
+| Webscraping Script | [.py](https://github.com/cobanov/dataeng-bootcamp/blob/main/homeworks/extractFromVatan.py) |
+| AWK Cheatsheet     | [PDF](https://github.com/cobanov/dataeng-bootcamp/blob/main/additional/AWK.pdf)            |
+
 # Day 1
 
 ## **Modül-1: Data Collection**
