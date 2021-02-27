@@ -8,20 +8,14 @@ Bu Repo [Data Engineering Masterclass (DEMC–201)](https://datamasterclass.zemi
 
 ## Contributors
 
-- Mert Çobanov
+- Yasar Celep
 - Çağrı Köz
 
 ## İçindekiler
 
-| Topic           | Day                                                                         |
-| --------------- | --------------------------------------------------------------------------- |
-| Data Collection | [Link](https://github.com/cobanov/dataeng-bootcamp#modül-1-data-collection) |
-| Data Cleaning   | [Link](https://github.com/cobanov/dataeng-bootcamp#modül-2-data-cleaning)   |
-
-| Files              | Link                                                                                       |
-| ------------------ | ------------------------------------------------------------------------------------------ |
-| Webscraping Script | [.py](https://github.com/cobanov/dataeng-bootcamp/blob/main/homeworks/extractFromVatan.py) |
-| AWK Cheatsheet     | [PDF](https://github.com/cobanov/dataeng-bootcamp/blob/main/additional/AWK.pdf)            |
+-
+-
+-
 
 # Modül-1: Data Collection
 
@@ -30,9 +24,6 @@ Bu Repo [Data Engineering Masterclass (DEMC–201)](https://datamasterclass.zemi
 **Anahtar sözcükler:** JSON, XML, HTTP, HTML, DOM, grep, RegExp.
 
 **Araçlar:** Postman, log4j, python-logging, BeautifulSoup, Jsoup, Selenium
-
-<!-- <details><summary><b>Show Day 1
-</b></summary> -->
 
 ## Data Toplama
 
@@ -81,7 +72,7 @@ Logları tek büyük bir dosyada depolamak giderek büyüyen bir dosya olacağı
 
 Bu gibi büyük çaplı verilerde hızlı işlemler yapabilmek için **Hadoop** gibi özelleşmiş sistemler bulunmaktadır. Temelde depolanan ve güncel olarak kullanılan iki parçaya bölmek mantıklı olacaktır.
 
-### Keywords:
+## Keywords:
 
 - **POSTMAN:** API’ları paylaşmak, test etmek, dokümante etmek, monitör etmek için kullanılır. En öne çıkan özelliği tüm bunlar için çok kullanışlı bir arayüz sunmasıdır.
 - **Log4j:** Java uygulamalarında kullanılacak loglama kütüphanesidir.
@@ -90,24 +81,18 @@ Bu gibi büyük çaplı verilerde hızlı işlemler yapabilmek için **Hadoop** 
 - **Jsoup:** BS4'un java versiyonu
 - **Selenium:** Selenium, bilgisayarınıza yükleyeceğiniz bir driver yardımı ile ekrana chrome, firefox gibi bir tarayıcı açarak, gerçek bir insan gibi istediğiniz tüm işlemleri programlama dili yardımıyla çalıştırmanızı sağlayan bir araçtır.
 
-### End of the first day!
-
-</details>
-
-<!-- <details><summary><b>Show Day 2
-</b></summary> -->
 
 ## HTTP
 
 “http”, bilginin sunucudan kullanıcıya nasıl ve ne şekilde aktarılacağını gösteren protokoldür. İnternet ağında sunucular ve kullanıcılar arasında nasıl bir veri alışverişi olacağı hakkında kurallar vardır. Bu düzeni sağlayan protokol de HTTP’dir.internet sitesine girmek için adres çubuğuna sitenin adresini yazdığınız vakit HTTP ile sunucuya bir istek gönderilir ve sunucu bu isteğe cevap verdiği vakit internet sitesinin verileri size gelir.
 
-## 🏢 Restful Mimarisi
+## Restful Mimarisi
 
 RESTful servisler veri iletiminde farklı HTTP metotlarını kullanmaktadır. Yapılan HTTP request’i için çağrılan URL ile beraber HTTP method bilgisi bahsi geçen 4 metottan biri olarak seçilir ve sunucu yapılan talebin kayıt üzerine nasıl etki edeceğini buna göre belirler.
 
-**GET:** Veri listeleme - veri görüntülemek için kullanılır.
+- **GET:** Veri listeleme - veri görüntülemek için kullanılır.
 
-**POST:** Veri eklemek için kullanılır.
+- **POST:** Veri eklemek için kullanılır.
 
 ### Diğer Metodlar
 
@@ -116,7 +101,7 @@ RESTful servisler veri iletiminde farklı HTTP metotlarını kullanmaktadır. Ya
 - **DELETE:** Veriyi silmek için kullanılır.
 - **OPTIONS:** Bir  api urline Options isteği yapıldığında o url in hangi istekleri kabul ettiği bilgisi verilir.
 
-[httpbin.org](http://httpbin.org) sitesinden bu denemeler yapılabilir
+> [httpbin.org](http://httpbin.org) sitesinden bu denemeler yapılabilir
 
 ## HTTP Status kodları
 
@@ -128,7 +113,7 @@ Kodlara linkten ulaşılabilir. [https://www.argenova.com.tr/http-durum-ve-hata-
 - **HTTP 404 (Not Found):** istenen kaynağın sunucu tarafından bulunamayacağı anlamına gelir. Bu, geçici bir aksaklıktan kaynaklanıyor olabilir ve gelecekte başka bir istekte bulunulursa kaynak kullanılabilir olabilir. Çoğunlukla, 404'e götüren bağlantılara genellikle bozuk bağlantılar denir.
 - **HTTP 502 (Bad Gateway):** sunucunun proxy olarak hareket ederken istekte bulunurken sunucudan geçersiz bir yanıt aldığını gösterir.
 
-## 🥌 CURL
+## CURL
 
 Çoğu Unix bazlı sistemde mevcut olan bir komuttur ve “Client URL”nin kısaltılmışıdır. Curl komutları URL’lerin bağlanabilirliğini kontrol etmek ve veri transferi için harika bir araç olarak kullanılmak için üretilmiştir.
 
@@ -152,9 +137,7 @@ curl testalanadi.com
 curl -x GET "http://httpbin.org/get" -H "accept: application/json"
 ```
 
-ipify.org
-
-[https://api.ipify.org?format=json&param=2](https://api.ipify.org/?format=json&param=2)
+> [ipify.org ](https://api.ipify.org/?format=json&param=2)
 
 ### URL içerisindeki özel karakterler
 
@@ -162,21 +145,21 @@ ipify.org
 - **"%":** "Escaping" olarak adlandırılan bu işlem, URL'deki boşluk karakterinin soruna yol açmaması için alternatif bir biçime dönüştürülmesidir. Örneğin + yazdığınızda bu karakter, %3F ile değiştirilir.
 - **"=":** anahtar-değer çiftlerini temsil eder. Anahtar-değer çiftine bir örnek, sayfa=4 olabilir. Burada "sayfa" anahtar, "4" ise değerdir.
 
-## 🚀 GREP
+## GREP
 
 Elimizdeki loglarda buradan terminal ekranında hızlıca sorgularımız getirebiliriz. Logların güzel şekilde tutulması işimizi kolaylaştırıyor. Pipe ile çok daha etkin kullanım yöntemleri mevcut.
 
-grep "42.236.10.125" \* —color | wc -lw
+`grep "42.236.10.125" \* —color | wc -lw`
 
-### 📚 Ders Örnekleri:
+### Ders Örnekleri
 
-grep "GET" \* —color
+` grep "GET" \* —color`
 
-grep "42.236.10.125" \* —color | wc -lw
+`grep "42.236.10.125" \* —color | wc -lw`
 
-grep "mozilla" \* —color
+` grep "mozilla" \* —color`
 
-## 🌲 DOM
+## DOM
 
 HTML için kullanılan doküman nesne modelidir. HTML Elementlerini objeler olarak, HTML elementlerinin tüm özelliklerini, HTML elementlerine erişmek için metotları, tüm HTML elementleri için olayları tanımlar. Diğer bir deyişle HTML DOM yeni elementler eklemek, elementleri değiştirmek veya silmek için kullanılır.
 
@@ -196,15 +179,15 @@ HTML için kullanılan doküman nesne modelidir. HTML Elementlerini objeler olar
 </html>
 ```
 
-## 🐍 Python Web Scraping
+## Python Web Scraping
 
-### Logging
+## Logging
 
 **Kaynak**: [https://medium.com/@umut.boz/python-logging-a8fdd36fee7](https://medium.com/@umut.boz/python-logging-a8fdd36fee7)
 
 Loglama, bir sistemdeki hareketliliği kaydetmek için kullanılan yapıdır. Python standart kütüphanesi içinde loglama için çok güçlü bir kütüphane barındırır. Bu kütüphane ile geliştirdiğimiz programlarda hata ayıklamak aynı zamanda ifadeleri yazdırmak için loglama kullanabiliriz.
 
-### Requests
+## Requests
 
 **Kaynak**: [https://medium.com/python/python-requests-modülü-4af79ebdb8c8](https://medium.com/python/python-requests-mod%C3%BCl%C3%BC-4af79ebdb8c8)
 
@@ -212,7 +195,7 @@ Python, standart modüllerinin yanında harici yüzlerce kullanışlı modül il
 
 Bu modül ile web üzerindeki isteklerinizi yöneteceksiniz. Mesela bu modül ile API entpointlerine PUT, DELETE, POST gibi istekler atabilirsiniz.
 
-### BeautifulSoup4
+## BeautifulSoup4
 
 **Kaynak**: [https://medium.com/@nuriyavuz2.71/python-beautifulsoup-modülü-689ef499ee16](https://medium.com/@nuriyavuz2.71/python-beautifulsoup-mod%C3%BCl%C3%BC-689ef499ee16)
 
@@ -220,7 +203,7 @@ BeautifulSoup, HTML veya XML dosyalarını işlemek için oluşturulmuş güçl�
 
 Bu modül ile bir kaynak içerisindeki HTML kodlarını parse edip,botlar yazabiliriz.
 
-### Selenium
+## Selenium
 
 **Kaynak**: [https://www.sinanerdinc.com/python-selenium-modulu-kullanimi-1](https://www.sinanerdinc.com/python-selenium-modulu-kullanimi-1)
 
@@ -230,7 +213,7 @@ Selenium, bilgisayarınıza yükleyeceğiniz bir driver yardımı ile ekrana chr
 
 **Ödev Linki:** [https://github.com/cobanov/dataeng-bootcamp/blob/main/homeworks/scraping_homework.py](https://github.com/cobanov/dataeng-bootcamp/blob/main/homeworks/scraping_homework.py)
 
-### 🔗 **GISTLER:**
+### **GISTLER**
 
 - **BS4**: [https://gist.github.com/sirin/695abacaa207ad7af20f18c946d19858](https://gist.github.com/sirin/695abacaa207ad7af20f18c946d19858)
 - **Selenium**: [https://gist.github.com/sirin/0e1491163b8f485a476e0991ad228b86](https://gist.github.com/sirin/0e1491163b8f485a476e0991ad228b86)
@@ -245,20 +228,8 @@ Selenium, bilgisayarınıza yükleyeceğiniz bir driver yardımı ile ekrana chr
 **Anahtar sözcükler:** Bash, GNU Awk, GNU sed, jq, CSV files, JSON
 
 **Araçlar:** Shell(s), Excel, R
-<!-- 
-<details><summary><b>Show Day 3
-</b></summary> -->
-# Modul 2 - Day 3
 
-## **Modül-2: Data Cleaning**
-
-**İçerik:** Parsing, Duplicate Elimination, Ensuring Quality: Validity-Accuracy-Completeness, Statistical Analysis, Unix-Linux Terminal
-
-**Anahtar sözcükler:** Bash, GNU Awk, GNU sed, jq, CSV files, JSON
-
-**Araçlar:** Shell(s), Excel, R
-
-# Data Quality
+## Data Quality
 
 **Kaynak:** [https://smartbridge.com/data-done-right-6-dimensions-of-data-quality/](https://smartbridge.com/data-done-right-6-dimensions-of-data-quality/)
 
@@ -363,15 +334,6 @@ awk '{print $12}' file-name.txt | uniq ;
 awk '{print $12}' file-name.txt | grep 'Chrome' | wc -l
 ```
 
-netflix datasetinde country birden fazla film cekmıs yonetmenler vs.
-
-csv ve tsv formatlarını ekle
-
-json örnek sitesi:
-
-<!-- </details> -->
-
----
 
 # Modül-3: Data Storage
 
@@ -381,9 +343,6 @@ json örnek sitesi:
 
 **Araçlar:** MySQL, MariaDB, PostgreSQL, Redis, MongoDB, Neo4J
 
-<!-- <details><summary><b>Show Day 5
-</b></summary> -->
-# Modul 3 - Day 1
 
 ## Veritabanları (Databases)
 
@@ -391,11 +350,11 @@ Veri tabanları birbirleriyle ilişkili bilgilerin depolandığı alanlardır. B
 
 ### İlişkisel Veritabanları (Relational Databases)
 
-**MySQL:** Çoklu iş parçacıklı (multi-threaded), çok kullanıcılı (multi-user), hızlı ve sağlam (robust) bir veri tabanı yönetim sistemidir.
+- **MySQL:** Çoklu iş parçacıklı (multi-threaded), çok kullanıcılı (multi-user), hızlı ve sağlam (robust) bir veri tabanı yönetim sistemidir.
 
-**PostgreSQL**, veritabanları için ilişkisel modeli kullanan ve [SQL](https://tr.wikipedia.org/wiki/SQL) standart sorgu dilini destekleyen bir [veritabanı yönetim sistemidir](https://tr.wikipedia.org/wiki/Veritaban%C4%B1_y%C3%B6netim_sistemi). PostgreSQL aynı zamanda iyi performans veren, güvenli ve geniş özellikleri olan bir [Veri Tabanı Yönetim Sistemi](https://tr.wikipedia.org/wiki/Veri_Taban%C4%B1_Y%C3%B6netim_Sistemi)'dir. PostgreSQL ücretsiz ve açık kodludur.
+- **PostgreSQL**, veritabanları için ilişkisel modeli kullanan ve [SQL](https://tr.wikipedia.org/wiki/SQL) standart sorgu dilini destekleyen bir [veritabanı yönetim sistemidir](https://tr.wikipedia.org/wiki/Veritaban%C4%B1_y%C3%B6netim_sistemi). PostgreSQL aynı zamanda iyi performans veren, güvenli ve geniş özellikleri olan bir [Veri Tabanı Yönetim Sistemi](https://tr.wikipedia.org/wiki/Veri_Taban%C4%B1_Y%C3%B6netim_Sistemi)'dir. PostgreSQL ücretsiz ve açık kodludur.
 
-**MariaDB** [ilişkisel veritabanı sistemi](https://tr.wikipedia.org/wiki/%C4%B0li%C5%9Fkisel_veri_taban%C4%B1_y%C3%B6netim_sistemi) olan [MySQL](https://tr.wikipedia.org/wiki/MySQL)'in kaynak kodundan türemiş, [GNU Genel Kamu Lisansı](https://tr.wikipedia.org/wiki/GNU_Genel_Kamu_Lisans%C4%B1) altında dağıtılarak ücretsiz olarak kullanılabilen, geliştirilmesi ve bakımı topluluk tarafından sürdürülen veritabanıdır. MySQL, önde gelen [açık kaynaklı](https://tr.wikipedia.org/wiki/A%C3%A7%C4%B1k_kaynak) yazılım sistemi olarak ticari bir şirket olan [Oracle](https://tr.wikipedia.org/wiki/Oracle) tarafından satın alındıktan sonra MySQL'in ilk geliştiricileri tarafından Monty AB çatısı altında yine açık kaynak olarak MariaDB adıyla yola devam edeceği duyurulmuş ve oldukça ilgi görmüştür.
+- **MariaDB** [ilişkisel veritabanı sistemi](https://tr.wikipedia.org/wiki/%C4%B0li%C5%9Fkisel_veri_taban%C4%B1_y%C3%B6netim_sistemi) olan [MySQL](https://tr.wikipedia.org/wiki/MySQL)'in kaynak kodundan türemiş, [GNU Genel Kamu Lisansı](https://tr.wikipedia.org/wiki/GNU_Genel_Kamu_Lisans%C4%B1) altında dağıtılarak ücretsiz olarak kullanılabilen, geliştirilmesi ve bakımı topluluk tarafından sürdürülen veritabanıdır. MySQL, önde gelen [açık kaynaklı](https://tr.wikipedia.org/wiki/A%C3%A7%C4%B1k_kaynak) yazılım sistemi olarak ticari bir şirket olan [Oracle](https://tr.wikipedia.org/wiki/Oracle) tarafından satın alındıktan sonra MySQL'in ilk geliştiricileri tarafından Monty AB çatısı altında yine açık kaynak olarak MariaDB adıyla yola devam edeceği duyurulmuş ve oldukça ilgi görmüştür.
 
 ### Key, Primary Key, Unique Key ve Foreign Key Tanımlamaları (Constrains)
 
@@ -443,7 +402,7 @@ SQL indekslemenin amacı işlenen verinin daha az veri okunarak sorgu sonucunun 
 
 ### Yatay ve Dikey Ölçeklenebilirlik:
 
-**\*Kaynak**: [http://www.ilterismutlu.com/yatay-vs-dikey-olceklenebilirlik-horizontally-vs-vertically-scalable-scalability/](http://www.ilterismutlu.com/yatay-vs-dikey-olceklenebilirlik-horizontally-vs-vertically-scalable-scalability/)\*
+**Kaynak**: [http://www.ilterismutlu.com/yatay-vs-dikey-olceklenebilirlik-horizontally-vs-vertically-scalable-scalability/](http://www.ilterismutlu.com/yatay-vs-dikey-olceklenebilirlik-horizontally-vs-vertically-scalable-scalability/)
 
 **Dikey Ölçeklenebilirlik Nedir ?**
 
@@ -457,7 +416,7 @@ Sistemin/Veritabanının Yatayda ölçeklenebilir olması (horizontally scalable
 
 ## ACID
 
-**\*Kaynak:** [https://medium.com/cloud-and-servers/acid-nedir-53f729f2bbb2](https://medium.com/cloud-and-servers/acid-nedir-53f729f2bbb2)\*
+**Kaynak:** [https://medium.com/cloud-and-servers/acid-nedir-53f729f2bbb2](https://medium.com/cloud-and-servers/acid-nedir-53f729f2bbb2)\*
 
 ACID, ilişkisel veritabanlarındaki Transaction için tanımlanmış özellik setidir.
 
@@ -478,15 +437,15 @@ Bu transaction başarılı bir şekilde gerçekleşebilmesi için ACID ilkelerin
 
 Bu durumda işlem geçersiz sayılacaktır.
 
-**Consistency(Tutarlılık) :** Transaction işlemi sonucunda veritabanındaki verinin geçerli durumunun, bir sonraki geçerli duruma geçmesidir. Özetle Transaction tam anlamı ile gerçekleşinceye kadar (constraints, cascades, triggers) işlemden etkilenen verilerin değerlerinin bir önceki geçerli değeri vermesidir.
+**Consistency(Tutarlılık):** Transaction işlemi sonucunda veritabanındaki verinin geçerli durumunun, bir sonraki geçerli duruma geçmesidir. Özetle Transaction tam anlamı ile gerçekleşinceye kadar (constraints, cascades, triggers) işlemden etkilenen verilerin değerlerinin bir önceki geçerli değeri vermesidir.
 
 **Isolation:** Aynı anda aynı veri üzerinde birden fazla Transaction değiştirme gereksinimi olabilir. Transaction’ların birbirlerinin işlemlerinden etkilenmemesi için işlemler Seri olarak yapılması gerekir. Transaction sırasında ilgili ve etkilenecek veri setleri kilitlenir. Taki işlem başarılı ve başarısız olarak sonuç dönünceye kadar.
 
 **Durability(Dayanıklılık):** Transaction sırasında fiziksel veya işlemsel bir hata olması durumunda sistemin kendisini bir önceki geçerli veri durumuna döndürebilme kabiliyetidir.
 
-### **Veritabanı Normalleştirmesi**
+## Veritabanı Normalleştirmesi
 
-**\*Kaynak:** [https://www.lifeacode.com/sql-dersleri/rdbms-nedir.html](https://www.lifeacode.com/sql-dersleri/rdbms-nedir.html)\*
+**Kaynak:** [https://www.lifeacode.com/sql-dersleri/rdbms-nedir.html](https://www.lifeacode.com/sql-dersleri/rdbms-nedir.html)\*
 
 Veritabanı normalleştirmesi, bir veritabanında verileri verimli bir şekilde düzenleme işlemidir. Bu normalleşme sürecinin iki nedeni var
 
@@ -511,7 +470,7 @@ Daha fazla almak ve dördüncü normal forma, beşinci normal forma ve benzerler
 
 ## Database Caching
 
-**\*Kaynak:** [https://www.beyaz.net/tr/guvenlik/makaleler/onbellege_alma_caching_nedir.html](https://www.beyaz.net/tr/guvenlik/makaleler/onbellege_alma_caching_nedir.html)\*
+**Kaynak:** [https://www.beyaz.net/tr/guvenlik/makaleler/onbellege_alma_caching_nedir.html](https://www.beyaz.net/tr/guvenlik/makaleler/onbellege_alma_caching_nedir.html)\*
 
 Önbellek, geçici bir veri alt kümesini depolayan yüksek hızlı veri depolama katmanıdır. Önbelleğe alma, daha önce alınan veya hesaplanan verinin verimli bir şekilde yeniden kullanılmasını sağlar. Önbellekleme yöntemi ile ilgili verilerin sonraki süreçte talep edildiğinde, verilere birincil depolama konumundan erişildiği için daha yüksek bir performans elde edilir.
 
@@ -519,8 +478,7 @@ Bir önbellekteki veriler genellikle RAM gibi donanımlarlarda saklanır ve veri
 
 **Önbelleğe Alma Sisteminin Faydaları:** Uygulama performansı arttırılır.Veritabanı maliyeti düşürülür.Arka uçtaki yük azaltılır.Tahmin edilebilir performans sağlanır.Veritabanı bağlantı noktaları ortadan kaldırılır.Okuma verimini arttırır.
 
-**Veritabanı (Database) Önbelleğe Alma**
+### Veritabanı (Database) Önbelleğe Alma
 
 Web uygulamasında kullanılan veritabanının hız ve verimlilik performansı, web uygulamasının performansı için büyük bir etkendir. Veritabanının önbelleğe alınması, uygulama performansını etkileyen arka uç veritabanlarından veri alışveriş sonucu doğacak gecikmelerin azaltılmasını sağlar.
 
-<!-- </details> -->
