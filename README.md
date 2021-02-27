@@ -31,8 +31,8 @@ Bu Repo [Data Engineering Masterclass (DEMC–201)](https://datamasterclass.zemi
 
 **Araçlar:** Postman, log4j, python-logging, BeautifulSoup, Jsoup, Selenium
 
-<details><summary><b>Show Day 1
-</b></summary>
+<!-- <details><summary><b>Show Day 1
+</b></summary> -->
 
 ## Data Toplama
 
@@ -94,8 +94,8 @@ Bu gibi büyük çaplı verilerde hızlı işlemler yapabilmek için **Hadoop** 
 
 </details>
 
-<details><summary><b>Show Day 2
-</b></summary>
+<!-- <details><summary><b>Show Day 2
+</b></summary> -->
 
 ## HTTP
 
@@ -245,9 +245,9 @@ Selenium, bilgisayarınıza yükleyeceğiniz bir driver yardımı ile ekrana chr
 **Anahtar sözcükler:** Bash, GNU Awk, GNU sed, jq, CSV files, JSON
 
 **Araçlar:** Shell(s), Excel, R
-
+<!-- 
 <details><summary><b>Show Day 3
-</b></summary>
+</b></summary> -->
 # Modul 2 - Day 3
 
 ## **Modül-2: Data Cleaning**
@@ -369,7 +369,7 @@ csv ve tsv formatlarını ekle
 
 json örnek sitesi:
 
-</details>
+<!-- </details> -->
 
 ---
 
@@ -381,8 +381,8 @@ json örnek sitesi:
 
 **Araçlar:** MySQL, MariaDB, PostgreSQL, Redis, MongoDB, Neo4J
 
-<details><summary><b>Show Day 5
-</b></summary>
+<!-- <details><summary><b>Show Day 5
+</b></summary> -->
 # Modul 3 - Day 1
 
 ## Veritabanları (Databases)
@@ -523,4 +523,4 @@ Bir önbellekteki veriler genellikle RAM gibi donanımlarlarda saklanır ve veri
 
 Web uygulamasında kullanılan veritabanının hız ve verimlilik performansı, web uygulamasının performansı için büyük bir etkendir. Veritabanının önbelleğe alınması, uygulama performansını etkileyen arka uç veritabanlarından veri alışveriş sonucu doğacak gecikmelerin azaltılmasını sağlar.
 
-</details>
+<!-- </details> -->
