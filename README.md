@@ -13,9 +13,67 @@ Bu Repo [Data Engineering Masterclass (DEMC–201)](https://datamasterclass.zemi
 
 ## İçindekiler
 
--
--
--
+<!-- TOC -->
+
+- [Data Engineering Masterclass](#data-engineering-masterclass)
+    - [Contributors](#contributors)
+    - [İçindekiler](#i%CC%87%C3%A7indekiler)
+- [Modül-1: Data Collection](#mod%C3%BCl-1-data-collection)
+    - [Data Toplama](#data-toplama)
+    - [API](#api)
+    - [**Web Scraping**](#web-scraping)
+    - [Loglama](#loglama)
+        - [Loglamanın seviyeleri](#loglaman%C4%B1n-seviyeleri)
+        - [Loglama yaparken:](#loglama-yaparken)
+    - [Keywords:](#keywords)
+    - [HTTP](#http)
+    - [Restful Mimarisi](#restful-mimarisi)
+        - [Diğer Metodlar](#di%C4%9Fer-metodlar)
+    - [HTTP Status kodları](#http-status-kodlar%C4%B1)
+        - [En sık karşılaşılan hata kodları](#en-s%C4%B1k-kar%C5%9F%C4%B1la%C5%9F%C4%B1lan-hata-kodlar%C4%B1)
+    - [CURL](#curl)
+        - [**Basit Curl Command Sözdizimi**](#basit-curl-command-s%C3%B6zdizimi)
+        - [Derste kullanılan örnekler](#derste-kullan%C4%B1lan-%C3%B6rnekler)
+        - [URL içerisindeki özel karakterler](#url-i%C3%A7erisindeki-%C3%B6zel-karakterler)
+    - [GREP](#grep)
+        - [Ders Örnekleri](#ders-%C3%B6rnekleri)
+    - [DOM](#dom)
+    - [Python Web Scraping](#python-web-scraping)
+    - [Logging](#logging)
+    - [Requests](#requests)
+    - [BeautifulSoup4](#beautifulsoup4)
+    - [Selenium](#selenium)
+        - [**GISTLER**](#gistler)
+- [Modül-2: Data Cleaning](#mod%C3%BCl-2-data-cleaning)
+    - [Data Quality](#data-quality)
+    - [AWK](#awk)
+        - [En uzun satır](#en-uzun-sat%C4%B1r)
+        - [".awk" uzantılı bir dosya olusturarak](#awk-uzant%C4%B1l%C4%B1-bir-dosya-olusturarak)
+        - [karakter uzunluğundan fazla olan satırlar](#karakter-uzunlu%C4%9Fundan-fazla-olan-sat%C4%B1rlar)
+        - [Şubat ayında kaç log düşmüş?](#%C5%9Fubat-ay%C4%B1nda-ka%C3%A7-log-d%C3%BC%C5%9Fm%C3%BC%C5%9F)
+        - [HTTP Kodlarında analiz](#http-kodlar%C4%B1nda-analiz)
+        - [IP Count](#ip-count)
+    - [Mozilla ve Chrome Sayısı](#mozilla-ve-chrome-say%C4%B1s%C4%B1)
+- [Modül-3: Data Storage](#mod%C3%BCl-3-data-storage)
+    - [Veritabanları Databases](#veritabanlar%C4%B1-databases)
+        - [İlişkisel Veritabanları Relational Databases](#i%CC%87li%C5%9Fkisel-veritabanlar%C4%B1-relational-databases)
+        - [Key, Primary Key, Unique Key ve Foreign Key Tanımlamaları Constrains](#key-primary-key-unique-key-ve-foreign-key-tan%C4%B1mlamalar%C4%B1-constrains)
+        - [**Primary Key Constraint**](#primary-key-constraint)
+        - [**Unique Constraint**](#unique-constraint)
+        - [**Foreign Key Constraint**](#foreign-key-constraint)
+        - [**Default Constraint**](#default-constraint)
+        - [**Check Constraint**](#check-constraint)
+        - [**Query**](#query)
+        - [**SQL**](#sql)
+        - [**SQL Index**](#sql-index)
+        - [Yatay ve Dikey Ölçeklenebilirlik:](#yatay-ve-dikey-%C3%B6l%C3%A7eklenebilirlik)
+    - [ACID](#acid)
+    - [Veritabanı Normalleştirmesi](#veritaban%C4%B1-normalle%C5%9Ftirmesi)
+    - [Database Türleri](#database-t%C3%BCrleri)
+    - [Database Caching](#database-caching)
+        - [Veritabanı Database Önbelleğe Alma](#veritaban%C4%B1-database-%C3%B6nbelle%C4%9Fe-alma)
+
+<!-- /TOC -->
 
 # Modül-1: Data Collection
 
@@ -80,7 +138,6 @@ Bu gibi büyük çaplı verilerde hızlı işlemler yapabilmek için **Hadoop** 
 - **BeautifulSoup:** BeautifulSoup, HTML veya XML dosyalarını işlemek için oluşturulmuş bir kütüphanedir.
 - **Jsoup:** BS4'un java versiyonu
 - **Selenium:** Selenium, bilgisayarınıza yükleyeceğiniz bir driver yardımı ile ekrana chrome, firefox gibi bir tarayıcı açarak, gerçek bir insan gibi istediğiniz tüm işlemleri programlama dili yardımıyla çalıştırmanızı sağlayan bir araçtır.
-
 
 ## HTTP
 
@@ -278,7 +335,7 @@ awk '{if (length($0) > max) max=length($0)} END {print max}' access.log.2.txt
 awk -f script.awk file-name.txt
 ```
 
-### 1000 karakter uzunluğundan fazla olan satırlar
+### karakter uzunluğundan fazla olan satırlar
 
 ```bash
 awk 'length($0) > 1000' file-name.txt | wc -l
@@ -334,7 +391,6 @@ awk '{print $12}' file-name.txt | uniq ;
 awk '{print $12}' file-name.txt | grep 'Chrome' | wc -l
 ```
 
-
 # Modül-3: Data Storage
 
 **İçerik:** SQL, Relational Databases, Document Databases, Time Series Databases, Graph Databases, Key-value Stores, Data Lakes
@@ -342,7 +398,6 @@ awk '{print $12}' file-name.txt | grep 'Chrome' | wc -l
 **Anahtar sözcükler:** SQL Query, Index, Database normalization, Database optimization, Designing Data Infrastructure
 
 **Araçlar:** MySQL, MariaDB, PostgreSQL, Redis, MongoDB, Neo4J
-
 
 ## Veritabanları (Databases)
 
@@ -481,4 +536,3 @@ Bir önbellekteki veriler genellikle RAM gibi donanımlarlarda saklanır ve veri
 ### Veritabanı (Database) Önbelleğe Alma
 
 Web uygulamasında kullanılan veritabanının hız ve verimlilik performansı, web uygulamasının performansı için büyük bir etkendir. Veritabanının önbelleğe alınması, uygulama performansını etkileyen arka uç veritabanlarından veri alışveriş sonucu doğacak gecikmelerin azaltılmasını sağlar.
-
