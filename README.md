@@ -1,3 +1,5 @@
+> **Arşivlendi (Eylül 2026).** 2021 bootcamp materyali, güncellenmiyor; bazı dış linkler kırık olabilir.
+
 # Data Engineering Masterclass
 
 <p align="center"> <img src="https://pbs.twimg.com/profile_images/1341352412540530688/EJfGb11W_400x400.jpg"> </img></p>
